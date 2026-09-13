@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+- Expanded Install into three concrete paths: a coding agent's auto-loaded project file, a chat app's saved custom instructions, and a one-off chat with no persistent configuration.
+
 ## 1.0.1
 
 - Restructured the README to match the doc order Latch and Focal use: overview, philosophy, use, install, limits, privacy, develop, license. Added Install, Limits, and Privacy sections that did not exist before.

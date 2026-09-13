@@ -26,10 +26,24 @@ Each file is fenced as a single paste-able block, with the reasoning around it l
 
 ## Install
 
-There is nothing to install in the usual sense. Two ways to bring Skylight into a session:
+There is nothing to install in the usual sense. `core.md` is meant to be always active, so it belongs wherever a session starts from. `editing.md` and `review.md` are modes for one task, so they belong in the one session that needs that mode, not in a file that loads every time.
 
-1. Paste `core.md`'s block as the first message, before asking an agent for anything else. Add `editing.md` or `review.md` in the same way for a session that needs that mode.
-2. Save the files in a project and reference `core.md` from that project's own instruction file, a system prompt, an `AGENTS.md`, a `CLAUDE.md`, so every session in that project starts from it automatically. Point a session at `editing.md` or `review.md` only when that session needs that mode.
+**A coding agent that auto-loads a project file** (Claude Code, Codex, and similar tools read an `AGENTS.md` or `CLAUDE.md` at the project root every session):
+
+1. Copy `core.md`'s fenced block into that project's `AGENTS.md` or `CLAUDE.md`.
+2. Every session in that project now starts from it, with no extra step.
+3. When a task needs `editing.md` or `review.md`, paste that block into the session that needs it.
+
+**A chat app with saved custom instructions** (a Claude Project, a custom GPT, an API system prompt):
+
+1. Paste `core.md`'s fenced block into the app's custom instructions or system prompt field, once.
+2. Every conversation under that project or assistant starts from it.
+3. Paste `editing.md` or `review.md` into an individual conversation when that conversation needs it.
+
+**A one-off chat with no persistent configuration**:
+
+1. Paste `core.md`'s fenced block as the first message, before asking for anything else.
+2. Add `editing.md` or `review.md` the same way, in the same message or a later one, when that session needs that mode.
 
 ## Limits
 
