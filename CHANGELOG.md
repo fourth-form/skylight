@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1
+
+- Restructured the README to match the doc order Latch and Focal use: overview, philosophy, use, install, limits, privacy, develop, license. Added Install, Limits, and Privacy sections that did not exist before.
+
 ## 1.0.0
 
 Initial release.
